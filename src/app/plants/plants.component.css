@@ -1,0 +1,13 @@
+app-filter {
+    float: left;
+}
+.plantsCards {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+a {
+    text-decoration: none;
+}

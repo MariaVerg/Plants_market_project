@@ -1,0 +1,13 @@
+{
+    "saleList": 
+    [{
+    "name": "тюльпани",
+    "img": "sale_tulip.jpg"
+    },{
+    "name": "нарциси",
+    "img": "sale_narcysy.jpg"
+    },{
+    "name": "крокуси",
+    "img": "sale_krorus.jpg"
+    }]       
+}

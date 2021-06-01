@@ -1,0 +1,20 @@
+<div>
+    <label>Категорії:</label>
+        <p *ngFor="let item of species" >
+            <input type="checkbox" name="{{item}}" [value]="item" 
+            (change)="sendSpecies($event, item)">
+            {{item}}
+        </p>     
+    <label>Колір квітки:</label>
+        <p *ngFor="let item of colors" >
+            <input type="checkbox" name="{{item}}" [value]="item" 
+            (change)="sendColor($event, item)">
+            {{item}}
+        </p> 
+    <label>Висота рослини:</label>
+        <p *ngFor="let item of height" >
+            <input type="checkbox" name="{{item}}"value="{{item}}"  
+            (change)="sendHeight($event, item)">
+            {{item}}см
+        </p>
+</div>

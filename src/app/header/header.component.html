@@ -1,0 +1,35 @@
+<div>
+    <div class="header-top">
+        <p>(044) 555 55 55<br>Щодня з 9:00 до 20:00</p>
+        <ul>
+            <li><a routerLink="/about">Про нас</a></li>
+            <li><a routerLink="/delivery">Доставка та оплата</a></li>
+            <li><a routerLink="/contacts">Контакти</a></li>
+        </ul>
+        <div class="lang"><a>UA</a>|<a>EN</a></div>
+    </div>
+    <div class="header-middle">
+        <a class="logo" routerLink="">
+            <img src="assets/logo1.png" alt="safflower">
+        </a>
+        <form class="search_input">
+            <input type="text" placeholder="Я шукаю..." name="itemSearch" 
+                [(ngModel)]="itemSearch">
+            <button (click)="cleanSearchInput()">
+                <a [routerLink]="['./search',itemSearch]">Знайти</a>
+            </button>
+        </form>
+        <div>
+            <a><i class="fas fa-shopping-basket"></i>кошик</a>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a [routerLink]="['discount', true]">Акції</a></li>
+            <li><a [routerLink]="['bulbs', 'цибулини']">Цибулини квітів</a></li>
+            <li><a [routerLink]="['perrenial', 'багаторічники']">Багаторічники</a></li>
+            <li><a [routerLink]="['rose', 'троянди']">Троянди</a></li>
+            <li><a [routerLink]="['shrub', 'кущі']">Декоративні кущі</a></li>
+        </ul> 
+    </nav>
+</div>

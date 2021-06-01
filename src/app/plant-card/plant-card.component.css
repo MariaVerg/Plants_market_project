@@ -1,0 +1,45 @@
+div {
+    width: 300px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 3px;
+    position:relative;
+}  
+div:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+img {
+    width: 90%;
+    margin-top: 5%;
+}
+input {
+    background-color: #b5ce49;
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    position:absolute; 
+    bottom: 15px;
+}
+.cost {
+    margin-top: 0px;
+    color: #809910;
+    font-weight: 600;
+    display: inline;  
+    margin-right: 5px;
+}
+.discount {
+    margin-top: 0px;
+    font-weight: 600;
+    color: #db5c01;
+    display: inline;
+    text-decoration: none;
+}
+.notPlant {
+    color: gray;
+}
+.costReduced {
+    text-decoration: line-through;
+}

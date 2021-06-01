@@ -1,0 +1,44 @@
+.wrapper {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    margin-right: 30px;
+}
+h2 {
+    text-align: center;
+}
+input {
+    background-color: #b5ce49;
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+}
+.buy {
+    text-align: right;
+    margin-bottom: 100px;
+}
+p {
+    font-size: 16px;
+}
+.cost {
+    margin-top: 0px;
+    color: #809910;
+    font-weight: 600;
+    display: inline;  
+    margin-right: 5px;
+}
+.discount {
+    margin-top: 0px;
+    font-weight: 600;
+    color: #db5c01;
+    display: inline;
+    text-decoration: none;
+}
+p .notPlant {
+    color: gray;
+}
+.costReduced {
+    text-decoration: line-through;
+}

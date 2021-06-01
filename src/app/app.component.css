@@ -1,0 +1,14 @@
+div:first-of-type {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+app-header, app-content, app-footer {
+    width: 100%; 
+}
+div:last-of-type {
+    flex: 1 0 auto;
+}
+app-footer {
+    flex: 0 0 auto;
+}

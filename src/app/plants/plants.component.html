@@ -1,0 +1,12 @@
+<div>
+    <app-filter [species] = "species" [colors] = "colors" [height] = "height"
+        (speciesSelected) = "setSpecies($event)"
+        (colorSelected) = "setColor($event)"
+        (heightSelected) = "setHeight($event)"   >
+    </app-filter>
+    <div class = "plantsCards">
+        <a *ngFor = "let plant of plantsSelected" [routerLink] = "['/plant',plant.name]">
+            <app-plant-card  [plant] = "plant" ></app-plant-card>
+        </a>
+    </div>
+</div>

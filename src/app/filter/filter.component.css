@@ -1,0 +1,26 @@
+div {
+    width: 150px;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+}
+label {
+    display: block;
+    color: #264e2c;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 2px solid  #264e2c;
+    border-radius: 5px;
+    background:  #ecf3d1;
+   text-align: center;
+    line-height: 30px;
+}
+p {
+    margin: 2px;
+}
+.input {
+    background-color: green;
+}
+

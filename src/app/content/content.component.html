@@ -1,0 +1,11 @@
+<div class="sales">
+  <carousel >
+    <a *ngFor = "let sale of salePlants" [routerLink]="['./sale', sale.name]">
+      <slide >
+        <img src="../../assets/{{sale.img}}" 
+            alt="sale_{{sale.name}}" 
+            style="display: block; width: 100%;">
+      </slide>
+    </a>
+  </carousel>
+</div>

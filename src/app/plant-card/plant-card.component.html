@@ -1,0 +1,17 @@
+<div>
+    <img src="../../assets/{{plant.img}}">
+    <h3>{{plant.name}}</h3>
+    <p *ngIf = "plant.isAvailability">
+        <span class="cost" [ngClass] = "{costReduced:plant.isDiscount}">
+            {{plant.cost}} грн
+        </span> 
+        <span class="discount" *ngIf="plant.isDiscount">
+            {{plant.costDiscount}} грн
+        </span>
+    </p>
+    <p *ngIf = "!plant.isAvailability" class="notPlant">
+        Немає в наявності
+    </p>
+    <input type="button" value="В кошик"[attr.disabled]="disabled(plant)">
+</div>
+
